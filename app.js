@@ -11,7 +11,12 @@ app.use(function (req, res, next) {
   next();
 });
 
-
+//-----/API/first  
+app.get("/", (req, res) => {
+ //console.log(req.query.query)
+   res.send('WORKING!!');
+ });
+ 
 
 //-----/API/first  
 app.get("/api/first", (req, res) => {
