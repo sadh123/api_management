@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 //-----/API/first  
 app.get("/api/first", (req, res) => {
  console.log(req.query.query)
-  res.send('First Successfull');
+  res.send(JSON.stringify(req.query.query));
 });
 
 //-----/API/second  
@@ -42,5 +42,5 @@ app.get("/api/fourth", (req, res) => {
  });
 
 
-app.listen(PORT, () => { console.log('server started at http://localhost:'+PORT)})
+app.listen(PORT, () => { console.log('server started at'+PORT)})
 
