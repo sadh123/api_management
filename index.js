@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 //-----/API/first  
 app.get("/api/first", (req, res) => {
  console.log(req.query.query)
-  res.send(JSON.stringify(req.query.query));
+  res.send({data:JSON.stringify(req.query.query)});
 });
 
 //-----/API/second  
@@ -38,7 +38,7 @@ app.get("/api/third", (req, res) => {
 app.get("/api/fourth", (req, res) => {
   console.log(req.query.query)
   
-   res.Body('Fourth Successfull');
+   res.send('Fourth Successfull');
  });
 
 
