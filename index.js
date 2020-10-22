@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 //-----/API/first  
 app.get("/api/first", (req, res) => {
  console.log(req.query.query)
-  res.send({data:JSON.stringify(req.query.query)});
+  res.send({Body:JSON.stringify(req.query.query)});
 });
 
 //-----/API/second  
