@@ -38,7 +38,7 @@ app.get("/api/third", (req, res) => {
 app.get("/api/fourth", (req, res) => {
   console.log(req.query.query)
   
-   res.status(200).send('Fourth Successfull');
+   res.body('Fourth Successfull');
  });
 
 
